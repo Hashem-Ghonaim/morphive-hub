@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { Barlow_Condensed, Arapey, Alexandria } from 'next/font/google';
 import Image from 'next/image';
 import Link from 'next/link';
-import { ChevronDown } from 'lucide-react';
+import { ChevronDown, Mail, MapPin } from 'lucide-react';
 import '../globals.css';
 
 const barlow = Barlow_Condensed({ 
@@ -122,12 +122,34 @@ export default function RootLayout({
           {children}
         </main>
 
-        <footer className="bg-surface-darker text-white py-12 border-t border-white/10">
-          <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl font-heading mb-6 leading-normal">Ready for the Next Step?</h2>
-            <p className="text-white/60 mb-8 max-w-lg mx-auto">Contact us today to turn your challenges into real, sustainable growth.</p>
-            <a href="mailto:info@morphivehub.com" className="text-caribbean hover:underline text-lg">info@morphivehub.com</a>
-            <p className="mt-8 text-sm text-white/40">© 2026 Morphive Business Hub. All rights reserved.</p>
+        <footer className="bg-surface-darker text-white py-16 border-t border-white/10 relative overflow-hidden">
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-caribbean/5 via-surface-darker to-surface-darker opacity-50 pointer-events-none" />
+          
+          <div className="container mx-auto px-4 relative z-10">
+            <div className="flex flex-col items-center text-center max-w-2xl mx-auto">
+              <h2 className="text-3xl md:text-4xl font-heading mb-4 leading-normal">Ready for the Next Step?</h2>
+              <p className="text-white/60 mb-10">Contact us today to turn your challenges into real, sustainable growth.</p>
+              
+              <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12 w-full mb-12">
+                <a href="mailto:info@morphivehub.com" className="flex items-center gap-4 group">
+                  <div className="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center group-hover:bg-caribbean/10 group-hover:border-caribbean/30 group-hover:scale-110 transition-all shadow-lg">
+                    <Mail size={20} className="text-caribbean" />
+                  </div>
+                  <span className="text-lg text-white/80 group-hover:text-white font-medium transition-colors tracking-wide" dir="ltr">info@morphivehub.com</span>
+                </a>
+
+                <div className="flex items-center gap-4 group cursor-default">
+                  <div className="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center group-hover:bg-caribbean/10 group-hover:border-caribbean/30 group-hover:scale-110 transition-all shadow-lg">
+                    <MapPin size={20} className="text-caribbean" />
+                  </div>
+                  <span className="text-lg text-white/80 group-hover:text-white font-medium transition-colors">Nasr City - Shebin El Kom</span>
+                </div>
+              </div>
+            </div>
+            
+            <div className="pt-8 border-t border-white/10 text-center">
+              <p className="text-sm text-white/40">© 2026 Morphive Business Hub. All rights reserved.</p>
+            </div>
           </div>
         </footer>
       </body>
