@@ -59,7 +59,7 @@ export default function Contact() {
                     </div>
                     <div>
                       <p className="text-sm text-white/50 mb-1 font-heading">Email</p>
-                      <p className="text-lg font-bold" dir="ltr">hello@morphive.com</p>
+                      <p className="text-lg font-bold" dir="ltr">info@morphivehub.com</p>
                     </div>
                   </div>
                   
@@ -79,7 +79,7 @@ export default function Contact() {
                     </div>
                     <div>
                       <p className="text-sm text-white/50 mb-1 font-heading">Headquarters</p>
-                      <p className="text-lg font-bold">Cairo, Egypt</p>
+                      <p className="text-lg font-bold">Nasr City - Shebin El Kom</p>
                     </div>
                   </div>
                 </div>
