@@ -92,15 +92,15 @@ export default function RootLayout({
                   المحتوى والتعلّم <ChevronDown size={16} className="group-hover:rotate-180 transition-transform" />
                 </button>
                 <div className="absolute top-full right-0 mt-2 w-48 bg-surface-darker/95 backdrop-blur-xl border border-white/10 rounded-2xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all overflow-hidden flex flex-col p-2 translate-y-2 group-hover:translate-y-0">
-                  <Link href="#" className="px-4 py-2 hover:bg-white/5 rounded-xl hover:text-caribbean transition-colors">المدونة</Link>
-                  <Link href="#" className="px-4 py-2 hover:bg-white/5 rounded-xl hover:text-caribbean transition-colors">الأدوات</Link>
-                  <Link href="#" className="px-4 py-2 hover:bg-white/5 rounded-xl hover:text-caribbean transition-colors">الكورسات</Link>
-                  <Link href="#" className="px-4 py-2 hover:bg-white/5 rounded-xl hover:text-caribbean transition-colors">الفعاليات</Link>
+                  <Link href="/blog" className="px-4 py-2 hover:bg-white/5 rounded-xl hover:text-caribbean transition-colors">المدونة</Link>
+                  <Link href="/tools" className="px-4 py-2 hover:bg-white/5 rounded-xl hover:text-caribbean transition-colors">الأدوات</Link>
+                  <Link href="/courses" className="px-4 py-2 hover:bg-white/5 rounded-xl hover:text-caribbean transition-colors">الكورسات</Link>
+                  <Link href="/events" className="px-4 py-2 hover:bg-white/5 rounded-xl hover:text-caribbean transition-colors">الفعاليات</Link>
                 </div>
               </div>
 
               {/* المجتمع و تواصل */}
-              <Link href="#" className="py-2 hover:text-caribbean transition-colors">المجتمع</Link>
+              <Link href="/community" className="py-2 hover:text-caribbean transition-colors">المجتمع</Link>
               <Link href="/contact" className="py-2 hover:text-caribbean transition-colors">تواصل</Link>
 
             </nav>

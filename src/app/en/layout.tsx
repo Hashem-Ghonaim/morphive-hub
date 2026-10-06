@@ -92,15 +92,15 @@ export default function RootLayout({
                   Content & Learning <ChevronDown size={16} className="group-hover:rotate-180 transition-transform" />
                 </button>
                 <div className="absolute top-full right-0 mt-2 w-48 bg-surface-darker/95 backdrop-blur-xl border border-white/10 rounded-2xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all overflow-hidden flex flex-col p-2 translate-y-2 group-hover:translate-y-0">
-                  <Link href="#" className="px-4 py-2 hover:bg-white/5 rounded-xl hover:text-caribbean transition-colors">Blog</Link>
-                  <Link href="#" className="px-4 py-2 hover:bg-white/5 rounded-xl hover:text-caribbean transition-colors">Tools</Link>
-                  <Link href="#" className="px-4 py-2 hover:bg-white/5 rounded-xl hover:text-caribbean transition-colors">Courses</Link>
-                  <Link href="#" className="px-4 py-2 hover:bg-white/5 rounded-xl hover:text-caribbean transition-colors">Events</Link>
+                  <Link href="/en/blog" className="px-4 py-2 hover:bg-white/5 rounded-xl hover:text-caribbean transition-colors">Blog</Link>
+                  <Link href="/en/tools" className="px-4 py-2 hover:bg-white/5 rounded-xl hover:text-caribbean transition-colors">Tools</Link>
+                  <Link href="/en/courses" className="px-4 py-2 hover:bg-white/5 rounded-xl hover:text-caribbean transition-colors">Courses</Link>
+                  <Link href="/en/events" className="px-4 py-2 hover:bg-white/5 rounded-xl hover:text-caribbean transition-colors">Events</Link>
                 </div>
               </div>
 
               {/* Community & Contact */}
-              <Link href="#" className="py-2 hover:text-caribbean transition-colors">Community</Link>
+              <Link href="/en/community" className="py-2 hover:text-caribbean transition-colors">Community</Link>
               <Link href="/en/contact" className="py-2 hover:text-caribbean transition-colors">Contact</Link>
 
             </nav>
